@@ -3,7 +3,7 @@ import './Input.css';
 
 const InputRoot = ({children}) => {
   return (
-    <div className="inputField">
+    <div className="input-field">
       {children}
     </div>
   )

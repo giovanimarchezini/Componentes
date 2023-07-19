@@ -7,7 +7,7 @@ const types = {
     message:'Preencha um email válido',
   },
   password:{
-    regex:/^(?=.*[A-Z])(?=.*[@&])(?=.*[0-9]).{10,}$/ ,
+    regex:/^(?=.*[A-Z])(?=.*[@&])(?=.*[0-9]).{10,}$/,
     message:'Senha muito fraca',
   },
   number:{
@@ -18,11 +18,10 @@ const types = {
 
 const useForm = (type) => {
   const [value, setValue] = useState('');
-  const [error, setError] = useState('');
+  const [error, setError] = useState(null);
   const [ativo, setAtivo] = useState(false);
 
   function validate(value){
-    if(type === false) return true;
     if(value === ''){
       setError('Preencha um valor');
       return false;
