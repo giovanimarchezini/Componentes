@@ -1,0 +1,35 @@
+.inputField input[type="email"],
+.inputField input[type="password"],
+.inputField input[type="text"],
+.inputField input[type="number"]
+{
+  width:100%;
+  height:40px;
+  padding:0;
+  border-radius:5px;
+  border:solid 1px gray;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.inputField{
+  position:relative;
+}
+
+
+
+.inputField label{
+  background:#fff;
+  position:absolute;
+  left:10px;
+  top:14px;
+  color:gray;
+  padding:0px 4px;
+  transition: .5s;
+  cursor:auto;
+}
+
+.inputField label.ativo{
+  top:-8px;
+}
+
